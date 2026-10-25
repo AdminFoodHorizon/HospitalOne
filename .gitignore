@@ -1,0 +1,61 @@
+# Python / Django
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.json
+credentials.json
+
+# Django databases and backups
+*.sqlite3
+*.sqlite3-journal
+*.dump
+*.bak
+*.backup
+*.sql
+backups/
+
+# Private hospital and patient files
+backend/private_reports/
+backend/media/
+backend/staticfiles/
+private_reports/
+patient_reports/
+medical_records/
+
+# React / Node
+node_modules/
+frontend/build/
+frontend/dist/
+frontend/coverage/
+.npm/
+*.log
+
+# Local development files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp

@@ -1,0 +1,64 @@
+/* HospitalOne Central TV: fixed viewport, scoped styles, no page scrolling. */
+.ho-tv, .ho-tv * { box-sizing: border-box; }
+.ho-tv {
+  position: fixed; inset: 0; width: 100vw; height: 100vh; height: 100dvh;
+  overflow: hidden; background: #0b1426; color: #f8fafc;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  display: grid; grid-template-rows: auto minmax(0, 1fr) auto;
+  padding: clamp(10px, 1.35vh, 20px) clamp(12px, 2vw, 36px);
+  text-align: left;
+}
+.ho-tv-header { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-bottom: clamp(8px, 1vh, 14px); border-bottom: 1px solid #273c57; min-width: 0; }
+.ho-tv-brand { min-width: 0; }
+.ho-tv-kicker { font-size: clamp(10px, .9vw, 15px); font-weight: 750; letter-spacing: .14em; color: #67e8f9; }
+.ho-tv-header h1 { font-size: clamp(18px, 2.35vw, 42px); line-height: 1.1; margin: 5px 0 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ho-tv-actions { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+.ho-tv-live { color: #86efac; font-weight: 800; letter-spacing: .06em; font-size: clamp(11px, 1vw, 17px); }
+.ho-tv-offline { color: #fbbf24; }
+.ho-tv button { font: inherit; border: 0; border-radius: 10px; cursor: pointer; }
+.ho-tv-sound, .ho-tv-retry { padding: 10px 16px; background: #e2e8f0; color: #102038; font-weight: 750; font-size: clamp(12px, 1vw, 16px); }
+.ho-tv-sound-on { color: #cbd5e1; font-size: clamp(11px, 1vw, 15px); }
+.ho-tv-board { display: flex; flex-direction: column; min-height: 0; padding: clamp(8px, 1.25vh, 16px) 0; }
+.ho-tv-board-head { display: flex; align-items: center; justify-content: space-between; color: #a9bdd8; font-size: clamp(11px, 1vw, 16px); letter-spacing: .07em; font-weight: 800; padding: 0 2px clamp(8px, 1vh, 14px); }
+.ho-tv-board-head strong { color: #67e8f9; }
+.ho-tv-layout { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 2fr); gap: clamp(10px, 1.2vw, 20px); min-height: 0; flex: 1; }
+.ho-tv-featured { background: linear-gradient(155deg, #174e63, #14334b); border: 2px solid #22d3ee; border-radius: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; min-width: 0; min-height: 0; padding: 14px; text-align: center; }
+.ho-tv-card-label { color: #a5f3fc; font-weight: 800; letter-spacing: .12em; font-size: clamp(11px, 1.2vw, 20px); }
+.ho-tv-featured-token { font-size: clamp(44px, 7vw, 132px); font-weight: 900; line-height: 1.05; color: #67e8f9; overflow-wrap: anywhere; }
+.ho-tv-featured-dept { font-size: clamp(18px, 2.5vw, 43px); font-weight: 800; line-height: 1.15; margin-top: 1.2vh; overflow-wrap: anywhere; }
+.ho-tv-featured-room { font-size: clamp(22px, 3vw, 52px); font-weight: 850; margin-top: 1.4vh; }
+.ho-tv-featured-time { font-size: clamp(13px, 1.3vw, 21px); color: #d3faff; font-weight: 700; margin-top: 2vh; }
+.ho-tv-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(4, minmax(0, 1fr)); gap: clamp(8px, 1vh, 15px); min-width: 0; min-height: 0; }
+.ho-tv-card { background: #1b2d48; border: 1px solid #385371; border-radius: 14px; padding: clamp(8px, 1.2vh, 18px) clamp(10px, 1.2vw, 20px); min-width: 0; min-height: 0; display: flex; flex-direction: column; justify-content: center; overflow: hidden; }
+.ho-tv-card-dept { color: #b6cbe2; font-size: clamp(11px, 1.15vw, 20px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ho-tv-card-token { font-size: clamp(25px, 3.15vw, 59px); font-weight: 900; line-height: 1.07; margin: 2px 0; overflow-wrap: anywhere; }
+.ho-tv-card-room { font-size: clamp(12px, 1.25vw, 23px); font-weight: 800; color: #67e8f9; }
+.ho-tv-card-time { font-size: clamp(10px, .98vw, 17px); color: #cbd5e1; margin-top: 4px; font-weight: 700; }
+.ho-tv-urgent { color: #fbbf24; }
+.ho-tv-empty-slot { background: #101f34; border: 1px dashed #2a3e58; border-radius: 14px; min-width: 0; min-height: 0; }
+.ho-tv-footer { border-top: 1px solid #273c57; padding-top: clamp(7px, 1vh, 14px); display: flex; align-items: center; justify-content: space-between; gap: 16px; color: #b8c9df; font-size: clamp(10px, .95vw, 16px); min-width: 0; }
+.ho-tv-error { color: #fda4af; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ho-tv-waiting, .ho-tv-center { display: flex; flex-direction: column; justify-content: center; align-items: center; flex: 1; text-align: center; min-height: 0; }
+.ho-tv-waiting-icon { color: #67e8f9; font-size: clamp(50px, 7vw, 100px); }
+.ho-tv-waiting h2, .ho-tv-center h2 { font-size: clamp(22px, 3vw, 52px); margin: 0 0 10px; }
+.ho-tv-waiting p, .ho-tv-center p { color: #a8bbd7; font-size: clamp(14px, 1.3vw, 22px); }
+.ho-tv-code { font-size: clamp(54px, 10vw, 160px); font-weight: 900; letter-spacing: .08em; color: #67e8f9; }
+.ho-tv-pairing { background: #14233e; border: 1px solid #334966; border-radius: 20px; margin: 2vh 0; }
+@media (max-width: 800px) {
+  .ho-tv-layout { grid-template-columns: 1fr; grid-template-rows: minmax(0, .8fr) minmax(0, 2fr); }
+  .ho-tv-featured-token { font-size: clamp(36px, 7vh, 72px); }
+  .ho-tv-featured-dept { font-size: clamp(16px, 2.5vh, 25px); margin-top: 0; }
+  .ho-tv-featured-room { font-size: clamp(18px, 3vh, 29px); margin-top: 0; }
+  .ho-tv-featured-time { margin-top: 0; }
+  .ho-tv-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(4, minmax(0, 1fr)); }
+  .ho-tv-card-token { font-size: clamp(20px, 3.5vh, 38px); }
+  .ho-tv-header h1 { font-size: clamp(16px, 3vw, 28px); }
+  .ho-tv-footer span:last-child { display: none; }
+}
+@media (max-height: 520px) {
+  .ho-tv-featured-token { font-size: clamp(32px, 5vw, 70px); }
+  .ho-tv-featured-dept { font-size: clamp(15px, 1.8vw, 25px); }
+  .ho-tv-featured-room { font-size: clamp(18px, 2.1vw, 29px); }
+  .ho-tv-card-token { font-size: clamp(18px, 2.4vw, 38px); }
+  .ho-tv-card-time { margin-top: 0; }
+}

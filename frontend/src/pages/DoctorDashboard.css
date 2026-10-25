@@ -1,0 +1,269 @@
+.doc-dashboard{min-height:100vh;background:#f5f8fb;color:#173247;font-family:'DM Sans',Arial,sans-serif}.doc-header{height:82px;background:#0d2c3c;color:#e5f6f6;padding:0 clamp(20px,3vw,50px);display:flex;align-items:center;justify-content:space-between;gap:20px}.doc-brand{display:flex;align-items:center;gap:11px;font-family:Manrope,Arial,sans-serif;font-size:17px;font-weight:800;letter-spacing:1px}.doc-brand>div>span{color:#5fdec6}.doc-brand small{display:block;font-size:10px;color:#94b7bf;letter-spacing:.3px;font-weight:500;margin-top:3px}.doc-brand-icon{width:41px;height:41px;border-radius:13px;background:#5fdec6;color:#073c43;display:grid;place-items:center}.doc-header-actions{display:flex;align-items:center;gap:12px}.doc-header-actions button{display:flex;align-items:center;gap:8px;border:1px solid #355765;background:#1b5260;color:#eafffa;padding:10px 14px;border-radius:10px;font-size:12px;font-weight:700;cursor:pointer}.doc-header-actions button:hover{background:#266675}.doc-header-actions button:disabled{opacity:.5;cursor:wait}.doc-secure{display:flex;align-items:center;gap:7px;font-size:11px;color:#83dacb;margin-right:8px}.doc-main{max-width:1550px;margin:auto;padding:40px clamp(20px,3vw,50px) 28px}.doc-heading{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:30px}.doc-overline{font-size:10px;font-weight:800;color:#0d948a;letter-spacing:1.5px}.doc-heading h1{font:800 clamp(27px,2.5vw,37px) Manrope,Arial,sans-serif;letter-spacing:-1.3px;margin:10px 0 8px}.doc-heading h1 span{color:#0b9c8c}.doc-heading p{color:#8195a2;font-size:13px;margin:0}.doc-duty{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #e4edf1;border-radius:30px;padding:10px 15px;font-size:12px;font-weight:800}.doc-duty-on,.doc-duty-off{width:8px;height:8px;border-radius:50%;background:#24b78d}.doc-duty-off{background:#e38b43}.doc-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px;margin-bottom:24px}.doc-stat,.doc-panel{background:#fff;border:1px solid #e7eef2;border-radius:16px;box-shadow:0 5px 18px #1b4a5c07}.doc-stat{padding:22px}.doc-stat-top{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;color:#6c8290;font-size:12px;font-weight:700}.doc-stat-icon,.doc-panel-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;flex-shrink:0}.doc-stat-icon.teal,.doc-panel-icon.teal{color:#129b8e;background:#e5f8f3}.doc-stat-icon.blue,.doc-panel-icon.blue{color:#508ed6;background:#eaf2ff}.doc-stat-icon.amber,.doc-panel-icon.amber{color:#c08b25;background:#fff6e4}.doc-stat-icon.violet,.doc-panel-icon.violet{color:#8461bb;background:#f1edff}.doc-stat>strong{display:block;font:800 32px Manrope,Arial,sans-serif;margin:9px 0 3px}.doc-stat>small{font-size:11px;color:#9aabb4}.doc-panel{overflow:hidden;margin-bottom:22px}.doc-panel-title{display:flex;align-items:center;gap:13px;padding:22px 24px;border-bottom:1px solid #edf2f5}.doc-panel-heading{flex:1}.doc-panel-heading h2{font:800 16px Manrope,Arial,sans-serif;letter-spacing:-.4px;margin:0 0 6px}.doc-panel-heading p{font-size:11px;color:#91a3ad;margin:0}.doc-panel-count{font-size:11px;font-weight:800;color:#168f7e;background:#e7f7f2;border-radius:20px;padding:7px 12px}.doc-scroll{overflow-x:auto}.doc-table{border-collapse:collapse;width:100%;min-width:800px;text-align:left}.doc-table th{background:#f8fafb;color:#90a4af;font-size:9px;letter-spacing:1px;font-weight:800;padding:15px 24px;white-space:nowrap}.doc-table td{border-top:1px solid #edf2f5;padding:16px 24px;font-size:12px;color:#6e8794}.doc-token{background:#eaf8f5;color:#087f76;font-weight:800;letter-spacing:.4px;padding:8px 11px;border-radius:8px;white-space:nowrap}.doc-patient-name{font-weight:800;color:#294859!important}.doc-countdown{display:inline-flex;align-items:center;gap:6px;font-weight:800;color:#b78727;white-space:nowrap}.doc-action{border:0;border-radius:10px;min-height:39px;padding:0 13px;background:linear-gradient(115deg,#0b9b8b,#0a797b);color:#fff;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;display:inline-flex;align-items:center;gap:8px}.doc-action:hover{filter:brightness(1.05)}.doc-action:disabled{opacity:.55;cursor:not-allowed}.doc-empty{text-align:center;color:#94a3b8!important;padding:30px!important}.doc-error,.doc-warning,.doc-message{padding:13px 16px;border-radius:10px;margin-bottom:18px;font-size:12px;line-height:1.6}.doc-error{background:#fff0f0;border:1px solid #f4cece;color:#a83c3c}.doc-warning{background:#fff6e4;color:#9a6918}.doc-message{display:flex;align-items:center;gap:9px;background:#eaf8f5;color:#146a65}.doc-footer{display:flex;justify-content:center;align-items:center;gap:8px;color:#a2b0b9;font-size:10px;margin-top:25px}@keyframes docSpin{to{transform:rotate(360deg)}}.doc-spin{animation:docSpin 1s linear infinite}@media(max-width:900px){.doc-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.doc-secure{display:none}}@media(max-width:600px){.doc-header{padding:0 15px;height:72px}.doc-main{padding:24px 15px}.doc-brand{font-size:13px}.doc-brand-icon{width:35px;height:35px}.doc-header-actions{gap:6px}.doc-header-actions button{font-size:0;padding:10px}.doc-header-actions button svg{width:17px;height:17px}.doc-heading{align-items:flex-start}.doc-heading h1{font-size:27px}.doc-stat{padding:15px}.doc-stat-top{font-size:10px}.doc-stat-icon{width:35px;height:35px}.doc-stat>strong{font-size:27px}.doc-panel-title{padding:17px 15px}.doc-panel-heading h2{font-size:14px}.doc-panel-heading p{line-height:1.5}.doc-duty{font-size:10px;padding:8px 10px}}
+
+
+
+/\* Consultation form and resume strip ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â preserves original dashboard styling \*/
+
+.doc-resume-bar{background:#eefbf9;border:1px solid #bce6df;border-radius:14px;margin-bottom:22px;padding:16px 18px}
+
+.doc-resume-heading{display:flex;align-items:center;gap:10px;color:#0f766e;margin-bottom:12px}
+
+.doc-resume-heading span{margin-left:auto;background:#d1fae5;padding:4px 10px;border-radius:20px;font-size:12px}
+
+.doc-resume-list{display:grid;gap:8px}
+
+.doc-resume-item{display:flex;align-items:center;gap:15px;flex-wrap:wrap;background:white;padding:10px 12px;border-radius:10px}
+
+.doc-resume-item .doc-action{margin-left:auto}
+
+.doc-resume-number{font-size:13px;color:#64748b}
+
+.doc-modal-backdrop{position:fixed;inset:0;background:rgba(6,28,42,.72);z-index:1000;display:flex;justify-content:center;align-items:center;padding:18px}
+
+.doc-consultation{background:#fff;border-radius:18px;width:min(1020px,100%);max-height:94vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 25px 80px rgba(0,0,0,.24)}
+
+.doc-consultation-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:22px 26px;border-bottom:1px solid #e2e8f0}
+
+.doc-consultation-head h2{font-size:23px;margin:5px 0}.doc-consultation-head p{margin:0;color:#64748b;font-size:13px}
+
+.doc-close{border:0;background:#f1f5f9;padding:8px;border-radius:9px;cursor:pointer}
+
+.doc-consultation-body{padding:22px 26px;overflow-y:auto;flex:1}
+
+.doc-clinical-fields{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-bottom:22px}
+
+.doc-consultation label{display:flex;flex-direction:column;gap:7px;font-size:13px;font-weight:700;color:#334155}
+
+.doc-consultation input,.doc-consultation select,.doc-consultation textarea{box-sizing:border-box;width:100%;padding:11px 12px;border:1px solid #cbd5e1;border-radius:9px;background:white;font:inherit;font-size:14px;color:#0f172a}
+
+.doc-consultation textarea{resize:vertical}
+
+.doc-consultation input:focus,.doc-consultation select:focus,.doc-consultation textarea:focus{outline:2px solid #99f6e4;border-color:#0d9488}
+
+.doc-tabs{display:flex;gap:8px;border-bottom:1px solid #e2e8f0;margin-bottom:18px}
+
+.doc-tabs button{border:0;background:transparent;display:flex;align-items:center;gap:9px;padding:13px 16px;cursor:pointer;color:#64748b;font-weight:700;border-bottom:3px solid transparent}
+
+.doc-tabs button.selected{color:#0f766e;border-color:#0d9488}
+
+.doc-tab-content{min-height:160px}.doc-tab-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:16px}
+
+.doc-tab-heading h3{margin:0 0 5px;font-size:17px}.doc-tab-heading p{margin:0;color:#64748b;font-size:13px}
+
+.doc-add{display:inline-flex;align-items:center;gap:7px;padding:10px 14px;border-radius:9px;background:#0f766e;border:0;color:white;font-weight:700;cursor:pointer;white-space:nowrap}
+
+.doc-form-empty{border:1px dashed #cbd5e1;background:#f8fafc;padding:24px;text-align:center;border-radius:10px;color:#64748b}
+
+.doc-form-row{border:1px solid #e2e8f0;border-radius:12px;padding:16px;margin-bottom:14px;background:#fcfdff}
+
+.doc-form-row-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:13px}
+
+.doc-remove{display:inline-flex;align-items:center;gap:6px;border:0;background:#fff1f2;color:#be123c;border-radius:8px;padding:9px 12px;cursor:pointer}
+
+.doc-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+
+.doc-wide{grid-column:1/-1}.doc-test-row{display:flex;align-items:end;gap:15px}
+
+.doc-test-row label{flex:1}
+
+.doc-consultation-foot{border-top:1px solid #e2e8f0;padding:16px 24px;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+
+.doc-draft-indicator{font-size:12px;color:#64748b}
+
+.doc-form-actions{display:flex;gap:9px;flex-wrap:wrap}
+
+.doc-form-actions button{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:11px 14px;border-radius:9px;font-weight:700;cursor:pointer}
+
+.doc-form-actions button:disabled{opacity:.5;cursor:not-allowed}
+
+.doc-secondary{border:1px solid #cbd5e1;background:white;color:#334155}
+
+.doc-primary-alt{border:0;background:#2563eb;color:white}
+
+.doc-primary{border:0;background:#0f766e;color:white}
+
+@media(max-width:700px){.doc-consultation-head,.doc-consultation-body{padding:16px}.doc-clinical-fields,.doc-form-grid{grid-template-columns:1fr}.doc-tabs button{padding:12px 8px;font-size:12px}.doc-tab-heading{align-items:flex-start;flex-direction:column}.doc-consultation-foot{padding:12px 16px}.doc-form-actions{width:100%}.doc-form-actions button{flex:1}.doc-test-row{align-items:stretch;flex-direction:column}.doc-resume-item .doc-action{margin-left:0}}
+
+/\* Doctor consultation: mobile-friendly investigation checkboxes \*/
+
+.doc-investigation-group{margin:14px 0;padding:16px;border:1px solid #dce8ed;border-radius:14px;background:#fff}
+
+.doc-investigation-group h4{margin:0 0 12px;color:#123547;font-size:15px}
+
+.doc-investigation-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:10px}
+
+.doc-investigation-choice{display:flex;align-items:center;gap:10px;padding:12px;border:1px solid #dce8ed;border-radius:10px;cursor:pointer;min-height:46px;color:#173b4a;font-weight:600}
+
+.doc-investigation-choice:has(input:checked){border-color:#0a9489;background:#eaf8f5}
+
+.doc-investigation-choice input{width:18px;height:18px;accent-color:#0a9489;flex-shrink:0}
+
+.doc-investigation-count{font-weight:700;color:#0a766e}
+
+.doc-brand>div{overflow-wrap:anywhere}
+
+@media(max-width:640px){.doc-investigation-grid{grid-template-columns:1fr}.doc-investigation-group{padding:12px}.doc-consultation-foot .doc-form-actions{display:flex;flex-wrap:wrap;gap:8px}.doc-consultation-foot .doc-form-actions button{min-height:44px;flex:1 1 150px}.doc-tabs{overflow-x:auto}.doc-header{flex-wrap:wrap;gap:10px}}
+
+
+
+/\* Final consultation clinical handover: theme-aligned, responsive, accessible. \*/
+
+.doc-patient-context{background:#f4faf9;border:1px solid #cde9e4;border-radius:15px;padding:18px;margin-bottom:20px}
+
+.doc-context-title{display:flex;align-items:center;gap:12px;color:#0c766d;margin-bottom:14px}
+
+.doc-context-title>div{display:flex;flex-direction:column;gap:4px}
+
+.doc-context-title small{font-size:11px;color:#6b8792}
+
+.doc-history-empty{padding:15px;color:#64748b;background:white;border-radius:10px}
+
+.doc-nursing-list{display:grid;gap:10px}
+
+.doc-nursing-entry,.doc-past-visits{background:#fff;border:1px solid #e1ebef;border-radius:11px;padding:12px 14px}
+
+.doc-nursing-entry summary,.doc-past-visits summary{cursor:pointer;font-size:13px;font-weight:800;color:#173b4a;line-height:1.6}
+
+.doc-vitals-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:14px}
+
+.doc-vital{background:#f5f8fb;border-radius:9px;padding:12px;display:flex;flex-direction:column;gap:5px;min-width:0}
+
+.doc-vital small{font-size:11px;color:#68818d}.doc-vital strong{font-size:13px;color:#123547;overflow-wrap:anywhere}
+
+.doc-nurse-notes{margin-top:14px;border-top:1px solid #e6eff1;padding-top:12px;font-size:13px;color:#173b4a}
+
+.doc-nurse-notes p,.doc-previous-visit p{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.6;margin:7px 0 0}
+
+.doc-past-visits{margin-top:10px}.doc-previous-visit{padding:10px 0;border-top:1px solid #edf2f5;font-size:12px;color:#536d7b}
+
+.doc-safety-note{margin-top:12px;background:#fff8e9;border:1px solid #f3dfb4;color:#805c1e;padding:12px;border-radius:10px;font-size:12px;line-height:1.6}
+
+.doc-summary-tab{background:#f8fafc;border-radius:12px;padding:20px;color:#375463}.doc-summary-tab p{line-height:1.7;font-size:13px}
+
+.doc-summary-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.doc-summary-actions button{min-height:44px}
+
+@media(max-width:760px){.doc-vitals-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.doc-patient-context{padding:12px}.doc-consultation{max-height:100dvh;border-radius:0}.doc-modal-backdrop{padding:0}.doc-consultation-body{overscroll-behavior:contain}.doc-consultation-foot{padding-bottom:max(12px,env(safe-area-inset-bottom))}.doc-consultation input,.doc-consultation select,.doc-consultation textarea{font-size:16px;min-height:44px}.doc-tabs button{white-space:nowrap;min-height:48px}.doc-form-actions button{min-height:48px}}
+
+@media(max-width:370px){.doc-vitals-grid{grid-template-columns:1fr 1fr}.doc-consultation-head h2{font-size:19px}}
+
+
+
+/\* Released reports, clinical safety and polished prescribing workspace \*/
+
+.doc-intake-summary{background:#fffaf0;border:1px solid #f0d8a3;border-radius:16px;padding:20px;margin-bottom:20px;color:#233e4c}
+
+.doc-intake-summary h3{display:flex;align-items:center;gap:10px;font-size:16px;margin:0 0 14px;color:#7a5615}
+
+.doc-intake-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+
+.doc-intake-grid>div{background:white;border:1px solid #f0e5d2;border-radius:11px;padding:14px;min-width:0}
+
+.doc-intake-grid strong{font-size:12px;color:#334e5c}.doc-intake-grid p{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px;line-height:1.6;margin:8px 0 0}
+
+.doc-intake-summary>small{display:block;margin-top:12px;line-height:1.5;color:#795e2c}
+
+.doc-reports-tab{display:grid;gap:16px}.doc-report-card{border:1px solid #dbe7ec;border-radius:16px;background:#fff;padding:20px;box-shadow:0 4px 18px #143e4c0a;min-width:0}
+
+.doc-report-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}.doc-report-head small{font-weight:700;color:#168679}.doc-report-head h4{font-size:18px;margin:6px 0 10px;color:#173247}
+
+.doc-report-status{display:inline-block;border-radius:50px;background:#e4f7ef;color:#126b55;padding:6px 11px;font-size:11px;font-weight:800}
+
+.doc-pdf-button{display:inline-flex;align-items:center;gap:8px;min-height:44px;border-radius:10px;padding:10px 14px;cursor:pointer;font-weight:700;white-space:nowrap}
+
+.doc-report-meta{font-size:12px;color:#64748b;margin:13px 0}.doc-report-table-wrap{overflow-x:auto;border:1px solid #e2edf1;border-radius:11px}
+
+.doc-report-table{width:100%;border-collapse:collapse;min-width:570px;font-size:12px;text-align:left}
+
+.doc-report-table th{background:#f2f8f8;color:#466575;padding:12px;white-space:nowrap}.doc-report-table td{border-top:1px solid #e7eef1;padding:12px;vertical-align:top;overflow-wrap:anywhere}
+
+.doc-report-table td small{display:block;color:#64748b;margin-top:5px}.doc-report-narrative{margin-top:14px;padding:13px 15px;border-radius:10px;background:#f5fafb}
+
+.doc-report-narrative strong{font-size:12px;color:#0e746d;text-transform:capitalize}.doc-report-narrative p{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.65;font-size:13px;margin:7px 0 0}
+
+.doc-form-row{background:#fff;border:1px solid #d8e7e9;border-radius:16px;padding:20px;box-shadow:0 5px 20px #163c4a08}
+
+.doc-form-row-title{padding-bottom:13px;border-bottom:1px solid #e8eff2}.doc-form-grid label{font-size:12px;font-weight:750;color:#345566}
+
+.doc-form-grid input,.doc-form-grid select,.doc-form-grid textarea{background:#fbfdfd;border:1px solid #cadde1;border-radius:10px;min-height:46px;padding:11px 13px;width:100%;box-sizing:border-box;margin-top:7px}
+
+.doc-investigation-group{background:#f9fcfc;border-radius:16px;padding:20px}.doc-investigation-choice{background:white;transition:*background* .15s,border-color .15s}
+
+.doc-investigation-choice:hover{border-color:#18a193}.doc-investigation-choice:focus-within{outline:2px solid #0a9489;outline-offset:2px}
+
+@media(max-width:760px){.doc-intake-grid{grid-template-columns:1fr}.doc-intake-summary,.doc-report-card,.doc-form-row{padding:14px}.doc-report-head{flex-direction:column}.doc-pdf-button{width:100%;justify-content:center}.doc-report-table{min-width:520px}.doc-report-table-wrap{max-width:100%}.doc-investigation-group{padding:13px}}
+
+/* Responsive polish: preserves all doctor queue and consultation actions. */
+.doc-dashboard { --doc-line:#dfe9ef; --doc-focus:#0e9387; overflow-x:clip; }
+.doc-dashboard * { box-sizing:border-box; }
+.doc-header { min-height:76px; height:auto; padding-top:14px; padding-bottom:14px; }
+.doc-brand { min-width:0; letter-spacing:.1px; }
+.doc-brand > div { min-width:0; overflow-wrap:anywhere; line-height:1.25; }
+.doc-main { width:100%; min-width:0; }
+.doc-stat { transition:transform .18s ease, box-shadow .18s ease; min-width:0; }
+.doc-stat:hover { transform:translateY(-2px); box-shadow:0 12px 28px #123d5012; }
+.doc-stat-top span { line-height:1.45; }
+.doc-panel-title { min-width:0; }
+.doc-panel-heading { min-width:0; }
+.doc-panel-heading p { line-height:1.55; }
+.doc-table tr:hover td { background:#f8fcfc; }
+.doc-action, .doc-header-actions button, .doc-form-actions button { min-height:44px; justify-content:center; }
+.doc-dashboard button:focus-visible, .doc-dashboard summary:focus-visible { outline:3px solid #0e938799; outline-offset:3px; }
+.doc-resume-item { min-width:0; }
+.doc-resume-item .doc-patient-name { overflow-wrap:anywhere; }
+.doc-consultation { min-width:0; }
+.doc-consultation-body { min-height:0; }
+.doc-form-row, .doc-form-grid > *, .doc-intake-grid > * { min-width:0; }
+@media (max-width:900px) {
+  .doc-main { padding:28px 22px; }
+  .doc-stats { gap:12px; }
+  .doc-panel-title { padding:18px; }
+  .doc-intake-grid { grid-template-columns:1fr; }
+}
+@media (max-width:640px) {
+  .doc-header { padding:12px 14px; gap:10px; }
+  .doc-brand { flex:1 1 145px; font-size:14px; }
+  .doc-header-actions { flex:0 0 auto; }
+  .doc-main { padding:20px 12px 36px; }
+  .doc-heading { flex-wrap:wrap; gap:12px; margin-bottom:18px; }
+  .doc-heading > div:first-child { min-width:0; flex:1 1 190px; }
+  .doc-heading h1 { line-height:1.2; overflow-wrap:anywhere; }
+  .doc-stats { grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px; }
+  .doc-stat { padding:14px 12px; border-radius:13px; }
+  .doc-stat-top { gap:5px; }
+  .doc-stat-icon { width:32px; height:32px; }
+  .doc-panel { border-radius:14px; margin-bottom:14px; }
+  .doc-panel-title { gap:9px; padding:15px 12px; }
+  .doc-panel-icon { width:36px; height:36px; }
+  .doc-panel-heading h2 { font-size:14px; line-height:1.35; }
+  .doc-panel-count { padding:6px 9px; }
+  .doc-scroll { overflow:visible; }
+  .doc-table { display:block; width:100%; min-width:0; }
+  .doc-table thead { display:none; }
+  .doc-table tbody { display:grid; gap:10px; padding:12px; }
+  .doc-table tr { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; padding:14px; border:1px solid var(--doc-line); border-radius:12px; background:#fff; box-shadow:0 3px 12px #17324708; min-width:0; }
+  .doc-table td { border:0; padding:3px 0; min-width:0; font-size:12px; white-space:normal; overflow-wrap:anywhere; }
+  .doc-table td:nth-child(1) { grid-column:1; }
+  .doc-table td:nth-child(2) { grid-column:1/-1; font-size:14px; }
+  .doc-table td:last-child { grid-column:1/-1; padding-top:8px; }
+  .doc-table td:last-child .doc-action { width:100%; white-space:normal; }
+  .doc-table td.doc-empty { grid-column:1/-1; padding:22px 8px!important; }
+  .doc-resume-item { display:grid; grid-template-columns:1fr; gap:10px; }
+  .doc-resume-item .doc-action { width:100%; }
+  .doc-resume-heading { flex-wrap:wrap; }
+  .doc-consultation-head { padding:16px; }
+  .doc-consultation-body { padding:14px; }
+  .doc-consultation-foot { gap:10px; }
+  .doc-form-actions { display:grid; grid-template-columns:1fr; }
+  .doc-form-actions button { width:100%; white-space:normal; }
+  .doc-intake-summary, .doc-report-card, .doc-form-row { padding:14px; }
+  .doc-vitals-grid { gap:7px; }
+  .doc-report-head { flex-wrap:wrap; }
+  .doc-report-table-wrap { max-width:100%; overflow-x:auto; }
+}
+@media (max-width:360px) {
+  .doc-header-actions button { padding:9px; }
+  .doc-stats { grid-template-columns:1fr 1fr; }
+  .doc-stat-top { flex-wrap:wrap; }
+  .doc-panel-icon { display:none; }
+}
+@media (prefers-reduced-motion:reduce) { .doc-stat { transition:none; } .doc-spin { animation:none; } }
